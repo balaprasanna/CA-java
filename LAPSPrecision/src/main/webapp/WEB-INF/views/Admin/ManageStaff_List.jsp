@@ -45,8 +45,8 @@
 					<td><c:out value="${user.status}" /></td>
 					<td><c:out value="${user.compensationHours}" /></td>
 
-					<td><a href="${pageContext.request.contextPath}/staff/edit/${user.UID}.html" >Edit</a>&nbsp&nbsp
-						<a href="${pageContext.request.contextPath}/staff/delete/${user.UID}.html">Delete</a></td>
+					<td><a href="${pageContext.request.contextPath}/Admin/ManageStaff_Edit/${user.UID}.html" >Edit</a>&nbsp&nbsp
+						<a href="${pageContext.request.contextPath}/Admin/ManageStaff_Delete/${user.UID}.html">Delete</a></td>
 				</tr>
 			</c:forEach>
 

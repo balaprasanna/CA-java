@@ -25,13 +25,13 @@
 		<a href="${pageContext.request.contextPath}/">Home page</a>
 
 		<form:form method="POST" commandName="user"
-			action="${pageContext.request.contextPath}/staff/edit/${user.UID}.html">
+			action="${pageContext.request.contextPath}/Admin/ManageStaff_Edit/${user.UID}.html">
 
 			<table>
 				<tbody>
 					<tr>
 						<td>UID :</td>
-						<td><form:input path="UID" /></td>
+						<td><form:input path="UID" readonly="readonly" /></td>
 						<td><form:errors path="UID" cssStyle="color: red;" /></td>
 					</tr>
 					<tr>

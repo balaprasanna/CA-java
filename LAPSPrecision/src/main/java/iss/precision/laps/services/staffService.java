@@ -26,4 +26,6 @@ public List<leavetable> collectAllApplicationsHistoryByThisUser(String key);
 public List<leavetable> collectAllApplicationsAppliedByThisUser(String uid,String Status0);
 
 public leavetable findleaveRecord(int lid);
+
+public leavetable removeleaveapplication(int lid);
 }

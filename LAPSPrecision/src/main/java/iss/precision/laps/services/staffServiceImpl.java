@@ -74,4 +74,14 @@ public class staffServiceImpl implements staffService {
 		return newobj;
 	}
 
+	@Override
+
+	public leavetable removeleaveapplication(int lid) {
+		// TODO Auto-generated method stub
+		leavetable newobj=	lApprep.findOne(lid);
+		lApprep.delete(newobj);
+		
+		return newobj;
+	}
+
 }

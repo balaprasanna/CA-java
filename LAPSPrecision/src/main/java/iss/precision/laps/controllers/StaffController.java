@@ -149,6 +149,25 @@ public class StaffController {
 		
 		return "Staff/EditLeaveApplication";
 	}
+	
+	
+	@RequestMapping(value = "/manageLeaveApplication/manageLeaveApplication_delete", method = RequestMethod.GET)
+	public ModelAndView manageLeaveApplication_delete(@RequestParam int lid,
+	
+			Locale locale, Model model) {	
+		
+	/*	leavetable obj = _staffservice.findleaveRecord(lid);
+		model.addAttribute("leaveRecord", obj);
+
+		List<leavetypetable> typeColl = _staffservice.getAllLeaveType();
+		model.addAttribute("LeaveTypeCollection",typeColl);*/
+		ModelAndView mv = new ModelAndView("redirect:/Staff/manageLeaveApplication");
+		leavetable leave = _staffservice.removeleaveapplication(lid);
+		
+		return mv;
+	}
+	
+	
 	@RequestMapping(value = "/manageLeaveApplication/manageLeaveApplication_submit", method = RequestMethod.POST)
 	public ModelAndView manageLeaveApplication_edit_submit(@RequestParam String uid,
 			@RequestParam Date stime,

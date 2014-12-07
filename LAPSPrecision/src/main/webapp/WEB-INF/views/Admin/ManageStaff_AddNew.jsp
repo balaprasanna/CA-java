@@ -26,7 +26,7 @@
 		<a href="${pageContext.request.contextPath}/">Home page</a>
 
 		<form:form method="POST" commandName="user"
-			action="/Admin/ManageStaff_AddNew">
+			action="${pageContext.request.contextPath}/Admin/ManageStaff_AddNew">
 		
 			<table>
 				<tbody>

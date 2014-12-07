@@ -68,9 +68,14 @@
 						
 					</c:url>
 					<a href="${view}"><c:out value="Edit"/></a> 
+					
 					</td>
-					
-					
+					<td>
+					<c:url var="delete" scope="page" value="/Staff/manageLeaveApplication/manageLeaveApplication_delete">
+						<c:param name="lid" value="${leave.lid}"></c:param>
+						</c:url>
+						<a href="${delete}"><c:out value="Delete"/></a> 
+					</td>
 				</tr>
 			</c:forEach>
 		</table>
