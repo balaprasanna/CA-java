@@ -3,7 +3,10 @@ package iss.precision.laps.models;
 import java.math.BigInteger;
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
@@ -11,7 +14,10 @@ public class leaveapplication {
 	
 	
 	@Id
-	private String LeaveAplicationID;
+	@GeneratedValue( strategy = GenerationType.AUTO )
+	@Column(name="leaveAplicationID")
+	private int leaveAplicationID;
+	@Column(name="UID")
 	private String UID;
 	private Date StartTime;
 	private Date EndTime;
@@ -24,11 +30,11 @@ public class leaveapplication {
 
 
 	
-	public String getLeaveAplicationID() {
-		return LeaveAplicationID;
+	public int getLeaveAplicationID() {
+		return leaveAplicationID;
 	}
-	public void setLeaveAplicationID(String leaveAplicationID) {
-		LeaveAplicationID = leaveAplicationID;
+	public void setLeaveAplicationID(int leaveAplicationID) {
+		this.leaveAplicationID = leaveAplicationID;
 	}
 	public String getUID() {
 		return UID;

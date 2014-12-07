@@ -1,11 +1,14 @@
 package iss.precision.laps.models;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
-
+@Entity
 public class leavetypetable {
 	
 	@Id
-	private String	LeaveType;
+@Column(name="LeaveType")
+	private String LeaveType;
 
 	public String getLeaveType() {
 		return LeaveType;

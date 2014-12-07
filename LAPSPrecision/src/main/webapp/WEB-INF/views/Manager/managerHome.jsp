@@ -7,6 +7,25 @@
 <title>Insert title here</title>
 </head>
 <body>
-mnanager home
+Manager home
+<br>
+<a href="${pageContext.request.contextPath}/Manager/viewAplicationForApproval">
+View Application For Approval
+</a>
+
+<br>
+
+<a href="${pageContext.request.contextPath}/Manager/viewEmployeeLeaveHistory">
+View Employee Leave History
+</a>
+
+<br>
+
+<a href="${pageContext.request.contextPath}/Manager/approveCompensationClaim">
+Approve Compensation Claim
+</a>
+
+<br>
+
 </body>
 </html>

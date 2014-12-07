@@ -8,5 +8,30 @@
 </head>
 <body>
 Admin home
+<br>
+<a href="${pageContext.request.contextPath}/Admin/manageLeaveType">
+Manage Leave Type
+</a>
+
+<br>
+
+<a href="${pageContext.request.contextPath}/Admin/ManageStaff_List">
+Manage Staff
+</a>
+
+<br>
+
+<a href="${pageContext.request.contextPath}/Admin/manageLeaveEntitlement">
+Manage Leave Entitlement
+</a>
+
+<br>
+
+<a href="${pageContext.request.contextPath}/Admin/approvalHierarchy">
+Approval hierarchy
+</a>
+
+<br>
+
 </body>
 </html>

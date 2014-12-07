@@ -58,27 +58,6 @@ private UserProfileRepository rep;
 		
 		return null;
 	}
-	
-/*
-	@Resource
-	public UserProfileRepository userProfile;
-	*/
-	/*@Override
-	public String checkUserNameAndPassword(String uname, String pwd) {
-		// TODO Auto-generated method stub
-		String username ="";
-		
-		userprofile obj= userProfile.findOne(uname);
-		
-		String pwdRecived = obj.getPassword();
-		
-		if(pwdRecived.equalsIgnoreCase(pwd))
-		{
-			username=obj.getName();
-		}
-		
-		
-		return username; 
-	}*/
+
 
 }

@@ -47,15 +47,16 @@ public class LoginController {
 				
 				if(usProf.getRole().equalsIgnoreCase("Manager"))
 				{
-					view = new ModelAndView("redirect:/Manager");
+					view = new ModelAndView("redirect:/Manager/");
 				}
 				else if(usProf.getRole().equalsIgnoreCase("Administrator"))
 				{
-					view = new ModelAndView("redirect:/Admin");
+					view = new ModelAndView("redirect:/Admin/");
 				}
 				else if(usProf.getRole().equalsIgnoreCase("Staff"))
 				{
-					view = new ModelAndView("redirect:/Staff");
+					view = new ModelAndView("redirect:/Staff/");
+					view.addObject("uid", usProf.getUID());
 				}
 				
 				

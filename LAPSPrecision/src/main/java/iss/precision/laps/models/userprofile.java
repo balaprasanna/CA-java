@@ -30,13 +30,11 @@ public class userprofile {
 	private int Status;
 	@Column(name="CompensationHours")
 	private int CompensationHours;
-
-	
-	public String getDepartment() {
+	public String getUID() {
 		return UID;
 	}
-	public void setDepartment(String department) {
-		UID = department;
+	public void setUID(String uID) {
+		UID = uID;
 	}
 	public String getName() {
 		return Name;
@@ -62,11 +60,11 @@ public class userprofile {
 	public void setDepartmentID(String departmentID) {
 		DepartmentID = departmentID;
 	}
-	public String getReportsID() {
+	public String getReportsTo() {
 		return ReportsTo;
 	}
-	public void setReportsID(String reportsID) {
-		ReportsTo = reportsID;
+	public void setReportsTo(String reportsTo) {
+		ReportsTo = reportsTo;
 	}
 	public String getRole() {
 		return Role;
@@ -80,7 +78,7 @@ public class userprofile {
 	public void setPassword(String password) {
 		Password = password;
 	}
-	public Number getStatus() {
+	public int getStatus() {
 		return Status;
 	}
 	public void setStatus(int status) {
@@ -92,5 +90,7 @@ public class userprofile {
 	public void setCompensationHours(int compensationHours) {
 		CompensationHours = compensationHours;
 	}
+	
 
+	
 }
